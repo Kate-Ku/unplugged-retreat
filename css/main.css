@@ -459,6 +459,7 @@ aside {
 
     footer .copyright {
       width: 100%;
+      justify-content: center;
     }
 
     /* FAQ */
@@ -499,6 +500,53 @@ aside {
 
 @media only screen and (min-wdith: 1200px) {
   /* Desktop styles here */
+
+  /*General Styles*/
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* FAQ */
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  /* about */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
 }
 
 @media print,
