@@ -338,6 +338,14 @@ aside .form {
   background-color: #527158;
 }
 
+.mission-content h3 {
+  width: 100%;
+}
+
+.mission-content p {
+  width: 50%;
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
