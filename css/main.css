@@ -208,12 +208,18 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 /* Footer Styles */
@@ -242,6 +248,7 @@ footer .content-wrapper {
 }
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -280,7 +287,6 @@ aside .form {
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -302,16 +308,19 @@ aside .form {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color:
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -326,9 +335,11 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,6 +358,7 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -359,10 +371,15 @@ aside .form {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -463,6 +480,16 @@ aside .form {
       margin: 100px 0;
     }
 
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
     /* Header */
     header {
       justify-content: space-around;
@@ -479,7 +506,7 @@ aside .form {
     }
 
     header nav ul {
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .header-divider {
@@ -487,6 +514,12 @@ aside .form {
     }
 
     /* Hero Area */
+
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
 
     /* Aside */
     aside .content-wrapper {
@@ -503,8 +536,12 @@ aside .form {
     }
 
     /* Features */
+
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
     .features article {
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -513,7 +550,7 @@ aside .form {
     }
 
     .features .features-item-description {
-      width: 50%
+      width: 62%
     }
 
     /* Reviews */
@@ -521,6 +558,15 @@ aside .form {
       display: flex;
       justify-content: space-between;
     }
+
+    .reviews h2 {
+      width: 85%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+  }
 
     .reviews article div {
       width: 49%;
@@ -532,14 +578,24 @@ aside .form {
       margin: 100px 0;
     }
 
-    footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    footer p {
+        line-height: 1.285;
     }
 
     footer .copyright {
@@ -558,6 +614,12 @@ aside .form {
 
     .faq h2 {
       width: 100%;
+    }
+
+    .faq h4,
+    .faq p {
+        font-size: .875em;
+        line-height: 1.125;
     }
 
     /* about */
@@ -591,9 +653,28 @@ aside .form {
     max-width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
   /* Hero Area */
   .hero-area h1 {
     width: 60%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -620,10 +701,21 @@ aside .form {
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   /* FAQ */
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 
   /* about */
@@ -631,6 +723,11 @@ aside .form {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 }
 
