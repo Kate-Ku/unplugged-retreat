@@ -146,7 +146,7 @@ address {
   font-style: normal;
 }
 
-input [type=text] {
+input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -154,7 +154,7 @@ input [type=text] {
   padding: 1em;
 }
 
-input [type=button] {
+input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -714,9 +714,13 @@ aside .form {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .content-wrapper .social-icons {
+      width: 210px;
+    }
 }
 
-@media only screen and (min-wdith: 1200px) {
+@media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
   /*General Styles*/
